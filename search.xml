@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>前端--CSS构造块</title>
+      <link href="/2020/07/19/qian-duan-css-gou-zao-kuai/"/>
+      <url>/2020/07/19/qian-duan-css-gou-zao-kuai/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>主要内容</strong></p><p>CSS（层叠样式表）</p><ul><li>构造样式规则</li><li>注释</li><li>继承</li><li>层叠</li></ul><h2 id="构造样式规则"><a href="#构造样式规则" class="headerlink" title="构造样式规则"></a>构造样式规则</h2><pre><code>每条规则有两个部分组成：选择器和声明块。选择器决定哪些元素受到影响；声明块由一个或者多个属性-值对组成。</code></pre><pre class=" language-css"><code class="language-css"><span class="token selector">h1</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">/*h1是选择器*/</span>    <span class="token property">background-color</span><span class="token punctuation">:</span>green<span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">/*一条声明，background-color是属性，green是值；    二者共同组成属性-值对    */</span><span class="token punctuation">}</span></code></pre><p><strong>运行实例</strong><br>将上述代码保存并改后缀为.css文件，然后在HTML文件中运用link标签加载</p><pre class=" language-css"><code class="language-css">&lt;link rel=<span class="token string">"stylesheet"</span> href=<span class="token string">"XXX.css"</span> /></code></pre><p>最终上述样式规则的应用后为：<br><img src="https://img-blog.csdnimg.cn/20200715210206376.png" alt="在这里插入图片描述"></p><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>CSS中采用/*  */来注释一段内容</p><pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/*这是一个注释*/</span></code></pre><p>注意以下的注释是错误的</p><pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/*这是一个/*一个注释*/</span>一个注释*/</code></pre><p>禁止套娃！！</p><h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>如果标签a在标签b的内部，就可以认为a是b的后代，a具有b的样式。继承可以简化样式表。</p><p>一般会被继承的属性大概有<br><img src="https://img-blog.csdnimg.cn/20200715211510135.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NoaW55X3NhaQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h2 id="层叠"><a href="#层叠" class="headerlink" title="层叠"></a>层叠</h2><p>CSS 用层叠的原则来考虑样式声明，从而判<br>断相互冲突的规则中哪个规则应该起作用。<br>当自己编写的规则和浏览器的默认规则冲突，肯定是以自己所编写为准。<br>在此基础上，还要考虑<strong>特殊性、顺序、重要性</strong>三个方面。</p><ul><li><p><strong>特殊性</strong><br>特殊性规则指定选择器的具体程度。选<br>择器越特殊，规则就越强。</p></li><li><p><strong>顺序</strong><br>特殊性不足以判断时，规则的顺序就能起到作用。后出现的规则优先级高于先出现的<br>  “大佬都是最后登场的”</p></li><li><p><strong>重要性</strong><br>如果还不够，可以声明一条特殊的规则覆盖整个系统中的规则，这条规则的重要程度比其他规则都要高。</p></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML&amp;CSS&amp;JS</title>
+      <link href="/2020/07/19/html-css-js/"/>
+      <url>/2020/07/19/html-css-js/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="HTML-amp-CSS-amp-JS"><a href="#HTML-amp-CSS-amp-JS" class="headerlink" title="HTML&amp;CSS&amp;JS"></a>HTML&amp;CSS&amp;JS</h1><p>HTML：负责页面结构（最简单）– 结构</p><p>CSS：控制页面中元素的样式   – 表现</p><p>JS：响应用户的操作 – 行为</p><p><strong>软件开发流程</strong><br>网页设计师(设计网页)→前端工程师(静态网页)→后端工程师(动态网页)</p><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>超文本语言，纯文本中只能保持文本内容，音频、视频等不行。<br><strong>源代码示例</strong></p><pre class=" language-c"><code class="language-c"><span class="token operator">&lt;</span><span class="token operator">!</span>DOCTYPE html<span class="token operator">></span>    <span class="token comment" spellcheck="true">//声明网页按照HTML5规则编写</span><span class="token operator">&lt;</span>html<span class="token operator">></span><span class="token operator">&lt;</span>head<span class="token operator">></span>        <span class="token comment" spellcheck="true">//head中的内容不显示</span>    <span class="token operator">&lt;</span>meta charset<span class="token operator">=</span><span class="token string">"utf-8"</span><span class="token operator">></span>    <span class="token comment" spellcheck="true">//告诉浏览器字符集为"utf-8"</span>    <span class="token operator">&lt;</span>title<span class="token operator">></span>这是一个HTML示例<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">></span><span class="token operator">&lt;</span>body<span class="token operator">></span>    <span class="token comment" spellcheck="true">//body中所有内容可见</span>    <span class="token operator">&lt;</span>h1<span class="token operator">></span>我的第一个标题<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span>    <span class="token operator">&lt;</span>p<span class="token operator">></span>我的第一个段落。<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">></span></code></pre><p><strong>运行结果</strong><br><img src="https://img-blog.csdnimg.cn/20200711155629708.png" alt="运行结果"><br>从上面的运行结果可以看出，head里面的内容在网页中不显示，而body中的内容可全部显示。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HTML </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
